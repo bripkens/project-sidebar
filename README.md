@@ -14,7 +14,7 @@ or find it in the Packages tab under settings
 All commands can also be found in the Packages menu
 
 ### Open Sidebar
-`ctrl-alt-p` or **Project Manager** in the Command Palette.
+`ctrl-alt-p` or **Project Sidebar** in the Command Palette.
 
 ### Adding, Updating and Removing Projects
 See the [project-manager](https://github.com/danielbrodin/atom-project-manager) documentation for details. project-sidebar uses project-manager's `projects.cson` config file to populate the sidebar.
