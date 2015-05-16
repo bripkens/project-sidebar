@@ -1,0 +1,24 @@
+{
+  "name": "project-sidebar",
+  "main": "./lib/project-sidebar",
+  "version": "0.0.0",
+  "description": "Optional sidebar that can be used to open project directories.",
+  "keywords": [
+    "project",
+    "manager",
+    "settings",
+    "workflow",
+    "productivity"
+  ],
+  "activationCommands": {
+    "atom-workspace": "project-sidebar:toggle"
+  },
+  "repository": "https://github.com/bripkens/project-sidebar",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "dependencies": {
+    "season": "^5.2.0"
+  }
+}

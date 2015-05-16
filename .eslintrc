@@ -1,0 +1,19 @@
+  env:
+    node: true
+    browser: true
+
+  globals:
+    atom: false
+
+  rules:
+    brace-style: [2, '1tbs', { 'allowSingleLine': true }]
+    complexity: [2, 10]
+    global-strict: [2, 'always']
+    max-len: [2, 80, 4]
+    no-use-before-define: [2, 'nofunc']
+    quotes: [2, 'single', 'avoid-escape']
+    no-var: [0]
+    yoda: [0]
+    no-console: [1]
+    curly: [2, "multi-line"]
+    new-cap: [0]
