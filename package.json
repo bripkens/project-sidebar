@@ -1,8 +1,11 @@
 {
   "name": "project-sidebar",
-  "main": "./lib/project-sidebar",
+  "main": "./lib/index.js",
   "version": "1.0.0",
   "description": "Atom editor sidebar plugin that can be used to open project directories.",
+  "scripts": {
+    "build": "babel src --out-dir lib"
+  },
   "keywords": [
     "project",
     "manager",
@@ -19,6 +22,11 @@
     "atom": ">=0.174.0 <2.0.0"
   },
   "dependencies": {
+    "lodash": "^3.9.1",
+    "react": "^0.13.3",
     "season": "^5.2.0"
+  },
+  "devDependencies": {
+    "babel": "^5.4.4"
   }
 }
