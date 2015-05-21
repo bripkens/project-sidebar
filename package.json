@@ -25,8 +25,5 @@
     "lodash": "^3.9.1",
     "react": "^0.13.3",
     "season": "^5.2.0"
-  },
-  "devDependencies": {
-    "babel": "^5.4.4"
   }
 }
