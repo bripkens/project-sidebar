@@ -1,4 +1,4 @@
-## 1.1.1
+## 1.2.0
 - Avoid devDependencies as they are mistakenly analyzed by Atom during runtime
   and result in compatibility errors.
 
