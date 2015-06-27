@@ -8,7 +8,7 @@ const ProjectSidebar = {
 
   activate() {
     this.element = document.createElement('div');
-    React.render(
+    this.sidebar = React.render(
       <Sidebar />,
       this.element
     );
@@ -40,6 +40,7 @@ const ProjectSidebar = {
       this.panel.hide();
     } else {
       this.panel.show();
+      this.sidebar.onShow();
     }
   },
 };

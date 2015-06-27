@@ -85,6 +85,13 @@ const Sidebar = React.createClass({
         atom.project.addPath(eachPath);
       }
     });
+  },
+
+  onShow() {
+    this.setState({
+      projects: this.getProjects(),
+      activeProjects: this.getActiveProjects()
+    });
   }
 });
 

@@ -13,7 +13,7 @@ const Projects = React.createClass({
           {projectNames.map(projectName =>
             <li className={this.getProjectClasses(projectName)}
                 onClick={this.onClick.bind(this, projectName)}>
-              <span>{projectName}</span>
+              <span>{this.props.projects[projectName].title}</span>
             </li>
           )}
         </ul>
@@ -23,7 +23,6 @@ const Projects = React.createClass({
 
   getProjectClasses(projectName) {
     let classes = 'list-item';
-    console.log(this.props.activeProjects, projectName);
     if (this.props.activeProjects.indexOf(projectName) !== -1) {
       classes += ' ' + 'selected';
     }
