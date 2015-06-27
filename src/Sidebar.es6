@@ -39,7 +39,24 @@ const Sidebar = React.createClass({
 
   getProjects() {
     const confPath = path.join(atom.getConfigDirPath(), 'projects.cson');
-    return CSON.readFileSync(confPath);
+
+    try {
+      return CSON.readFileSync(confPath);
+    } catch (e) {
+      atom.notifications.addError(
+        'Failed to open the project sidebar',
+        {
+          detail: 'The project-sidebar package requires a configured ' +
+            'installation of the project-manager plugin. project-sidebar ' +
+            'loads a list of projects by inspecting the ' +
+            '~/.atom/projects.cson` file which is managed by project-manager.'
+        }
+      );
+
+      // fall back to an empty object, which is basically the same as saying
+      // that no projects have been configured.
+      return {};
+    }
   },
 
   getActiveProjects() {
