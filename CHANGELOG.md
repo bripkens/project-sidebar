@@ -1,3 +1,9 @@
+# Changelog
+
+## 1.3.0
+- The project list is now updated whenever the project sidebar is opened.
+- A popup will be shown to provide further guidance w.r.t. `project-manager` configuration.
+
 ## 1.2.0
 - Avoid devDependencies as they are mistakenly analyzed by Atom during runtime
   and result in compatibility errors.
