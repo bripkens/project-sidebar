@@ -1,5 +1,7 @@
 # Project Sidebar
 
+**This project is unmaintained. For this reason I will not read / work on any reported issues.**
+
 A package for changing Atom's project paths. This is a fast alternative to [project-manager's](https://github.com/danielbrodin/atom-project-manager) behavior. project-manager opens projects in new tabs, this package changes the current windows' project paths.
 
 project-sidebar is based on project-manager. You need to have project-manager installed and configured in order to use the project-sidebar.
